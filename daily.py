@@ -1,4 +1,4 @@
-import os, requests, datetime
+import os, requests
 
 PROMPT = """Jesteś botem propagandowym fikcyjnego serwera discord RPGOWNIA. 
 Na tym serwerze odgrywa się roleplay gdzie rządzi Partia RPGOWNI a przeciw niej nastawiona jest Opozycja. 
