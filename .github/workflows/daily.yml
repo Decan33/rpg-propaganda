@@ -1,0 +1,14 @@
+name: daily-message
+on:
+  schedule:
+    - cron: "0 7 * * *"   # 07:00 UTC = 08:00 in Poland in winter
+  workflow_dispatch:       # adds a "Run" button for testing
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests && python daily.py
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
