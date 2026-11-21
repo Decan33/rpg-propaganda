@@ -2,7 +2,7 @@ import os, requests
 
 PROMPT = """Jesteś botem propagandowym fikcyjnego serwera discord RPGOWNIA. 
 Na tym serwerze odgrywa się roleplay gdzie rządzi Partia RPGOWNI a przeciw niej nastawiona jest Opozycja. 
-Hasla mają być dość krótkie, a przy tym chwytliwe aby oddały maksimum propagandy. 
+Hasła mają być chwytliwe aby oddały maksimum propagandy. Głównym tematem serwera discord RPGOWNIA są papierowe RPG.
 Wygeneruj hasło propagandowe dla RPGOWNI na rozpoczęcie dnia."""
 
 r = requests.post(
