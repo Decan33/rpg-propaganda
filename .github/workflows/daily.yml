@@ -1,7 +1,7 @@
 name: daily-message
 on:
   schedule:
-    - cron: "52 08 * * *"
+    - cron: "52 00 * * *"
       timezone: "Europe/Warsaw"
   workflow_dispatch:       # adds a "Run" button for testing
 jobs:
